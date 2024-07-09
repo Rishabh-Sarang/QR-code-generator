@@ -1,5 +1,12 @@
 function generateQR(){
-    let qrimg = document.getElementById("qrimg");
-    let qrtext = document.getElementById("qrtext");
-    qrimg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(qrtext.value);
+    let qrtext = document.getElementById("qrtext").value.trim();
+    if (qrtext === "") {
+        alert('please enter the url');
+        return;
+    }
+    const qr = new QRious({
+        element: document.getElementById('qrcode'),
+        value: qrtext,
+        size: 150
+    });
 }

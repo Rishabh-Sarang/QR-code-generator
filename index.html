@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generate</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.js"></script>
 </head>
 <body>
     <div class="div">
@@ -13,7 +14,7 @@
             <input type="text" placeholder="Ex: www.google.com" id="qrtext">
 
             <div class="qr-img" id="imgbox">
-                <img src="" alt="" id="qrimg">
+                <canvas id="qrcode"></canvas>
             </div>
 
             <button onclick="generateQR()">Generate</button>
