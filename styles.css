@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 25px 35px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container p {
+    font-weight: 600;
+    font-size: 3vh;
+    margin-bottom: 20px;
+    text-align: left; /* Ensures "Enter URL" text aligns left */
+}
+
+.container input {
+    width: 100%; /* Adjusting width to account for padding */
+    height: 5vh;
+    border: 2px solid black;
+    outline: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container button {
+    width: 100%;
+    height: 5vh;
+    background: #494eea;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.imgbox {
+    width: 100%; /* Adjust width as needed */
+}
+
+img{
+    padding: 15px;
+}
+
